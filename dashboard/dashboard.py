@@ -104,7 +104,7 @@ def create_status_user(df: pd.DataFrame) -> pd.DataFrame:
 # Membaca data dari csv dan memastikan kolom yang bertipe datetime memiliki
 # tipe data yang benar
 
-all_df = pd.read_csv(filepath_or_buffer="./main_data.csv")
+all_df = pd.read_csv(filepath_or_buffer="main_data.csv")
 all_df["dteday"] = pd.to_datetime(all_df["dteday"])
 
 
